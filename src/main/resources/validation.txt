@@ -1,0 +1,46 @@
+If the company's asset is lost or stolen, will the employee be required to bear the cost? 1
+Will, there be a replacement provided to the employee if the company's asset is lost or stolen? 2
+Will the employee be obliged to pay if the company's asset were damaged? 3
+Will there be a temporary replacement provided if the damaged company's asset is being sent for repair? 4
+Can employees download and use an app themselves if it is free and does not require any registration or payment? 5
+What is the time period for the design team to complete a design request? 6
+How does the Design Team address the level of urgency of a particular request? 7
+Who is responsible for fixing if there is any software malfunction or technical error? 8
+If it is just a small request do I still need to go through teamwork and request via form or can I straight contact ICT support for assistance? 9
+If the company's assets have surpassed the warranty period, will the employee be subjected to pay for the troubleshooting issue?10
+Is it possible to skip the purchase requisition flow for urgent/ last minute purchase?11
+What is the pre-approved amount that a VP of each department can approve on for urgent/ last minute purchase?12
+Due to the urgent need of the product, do we need to inform the procurement team if we direct purchase from a local store?13
+What is the definition of goods and services?14
+In what circumstances is the vendor requisition form needed?15
+Is there a limit to the number of items allowed for purchase requests?16
+Can the requester suggest where to purchase the requested item?17
+What is the latest date to submit MC or any other supporting document to HR?18
+Is it compulsory to submit an OOO application through the company's HR app (BambooHR) even though the employee will just be OOO for less than 4 hours? Or, is it possible to only inform on Slack #timeoff?19
+Upon return to work, where can employees submit the medical certificate, and any other related supporting documents?20
+What is the difference between tardiness versus missed clocks?21
+How can employees know their own job grade?22
+Who is in charge of organizing and booking travel arrangements?23
+Can employees make their own travelling arrangements on flight/hotels?24
+What are the alleged conduct/behaviours that are subjected to disciplinary action?25
+Who will be involved in conducting the disciplinary hearing?26
+Who can the employees raise their grievance requests to?27
+In what circumstances can employees raise grievances?28
+How many times can the complainant raise grievances in writing?29
+When is the performance review conducted?30
+How to determine if an employee is subject to a PIP?31
+What happens if an employee's performance falls back to the same shortcoming after the initial PIP process is over?32
+Can employees be subjected to the same PIP process once again if the 6-18 months period has exceeded?33
+How long is one PIP process cycle?34
+Is PIP relevant to all parties in the organization?35
+Is a contract worker subjected to PIP?36
+Is interns/apprentices subjected to PIP?37
+What are the recruitment portals that we used to post for job vacancy?38
+Will there be any referral incentives for recommendations if the candidate is successfully hired?39
+Can a hiring manager approve the request of a potential candidate if he/she is requesting more than 20% increment from their last drawn salary?40
+What is the use of petty cash and who is allowed to use petty cash funds?41
+Where can a requester find a request for the business travel request form?42
+When should the employee be required to submit a business travel request form?43
+Who is the responsible party to perform a calculation of the total claim amount submitted?44
+Can employees combine all receipts into one task in teamwork for all business travel and OOO claims?45
+Where can employees submit the Business Travel & OOO Claim hardcopy?46

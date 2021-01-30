@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/OneHotNN.iml" filepath="$PROJECT_DIR$/OneHotNN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/main/java/jbot-master/jbot/jbot.iml" filepath="$PROJECT_DIR$/src/main/java/jbot-master/jbot/jbot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/main/java/jbot-master/jbot-example/jbot-example.iml" filepath="$PROJECT_DIR$/src/main/java/jbot-master/jbot-example/jbot-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/main/java/jbot-master/jbot-parent.iml" filepath="$PROJECT_DIR$/src/main/java/jbot-master/jbot-parent.iml" />
+    </modules>
+  </component>
+</project>
