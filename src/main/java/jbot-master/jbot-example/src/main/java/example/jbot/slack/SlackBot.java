@@ -1,11 +1,17 @@
 package example.jbot.slack;
 
+
+import example.jbot.neuralNetWok.QA;
+import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
 import example.jbot.neuralNetWok.CampusQA;
+
+
 import me.ramswaroop.jbot.core.common.Controller;
 import me.ramswaroop.jbot.core.common.EventType;
 import me.ramswaroop.jbot.core.common.JBot;
 import me.ramswaroop.jbot.core.slack.Bot;
 import me.ramswaroop.jbot.core.slack.models.Event;
+import me.ramswaroop.jbot.core.slack.models.Message;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -28,6 +34,9 @@ public class SlackBot extends Bot {
 
     private static final Logger logger = LoggerFactory.getLogger(SlackBot.class);
 
+    static MultiLayerNetwork model;
+    private QA campusQA;
+
     /**
      * Slack token from application.properties file. You can get your slack token
      * next <a href="https://my.slack.com/services/new/bot">creating a new bot</a>.
@@ -44,7 +53,7 @@ public class SlackBot extends Bot {
     public Bot getSlackBot() {
         return this;
     }
-    
+
 
     /**
      * Invoked when the bot receives a direct mention (@botname: message)
@@ -164,4 +173,29 @@ public class SlackBot extends Bot {
         stopConversation(event);    // stop conversation
     }
 
+    @Controller(events = EventType.MESSAGE, pattern = "Hi", next = "oiHidup")
+    public void onFAQ(WebSocketSession session, Event event) {
+        startConversation(event, "oiHidup");   // start conversation
+        reply(session, event, "Hi There!");
+    }
+
+    @Controller(next = "conversationEnd")
+    public void oiHidup(WebSocketSession session, Event event) throws Exception {
+        campusQA = new CampusQA();
+        reply(session, event, new Message(campusQA.getAnswer("What is the definition of goods and services?")));
+        nextConversation(event);
+    }
+
+
+    @Controller
+    public void conversationEnd(WebSocketSession session, Event event) {
+        if (event.getText().contains("Thanks")) {
+            reply(session, event, "Its my honour :)");
+            nextConversation(event);    // jump to next question in conversation
+        } else {
+            reply(session, event, "Sorry, will you rephrase again..");
+            stopConversation(event);    // stop conversation only if user says no
+        }
+
+    }
 }

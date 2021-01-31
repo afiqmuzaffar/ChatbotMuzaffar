@@ -28,7 +28,7 @@ public class CampusQA implements QA {
 
   public CampusQA() throws Exception {
 
-    File charFile = new File("C:/Users/aishatulhusna/Desktop/Muzaffar/Muzaffar/Muzaffar/qa-bot-dl4j-nn-master/qa-bot-dl4j-nn-master/src/main/resources/singleCharVec.txt");
+    File charFile = new File("C:/Users/aishatulhusna/Documents/GitHub/ChatbotMuzaffar/src/main/resources/singleCharVec.txt");
     FileReader cfIn = new FileReader(charFile);
     BufferedReader bcfr = new BufferedReader(cfIn);
     LineNumberReader lnr = new LineNumberReader(bcfr);
