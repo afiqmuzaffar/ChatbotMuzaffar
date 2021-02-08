@@ -6,21 +6,21 @@ public class Output_Sent2Vec {
   public static void main(String[] args) throws Exception {
     //Please set up the training-question sequence.txt file in advance
     outputCharVec();
-    File charFile = new File("C:/Users/aishatulhusna/Documents/GitHub/ChatbotMuzaffar/src/main/resources/singleCharVec.txt");
-    File inFileTe = new File("C:/Users/aishatulhusna/Documents/GitHub/ChatbotMuzaffar/src/main/resources/training.txt");
-    File outFileTe = new File("C:/Users/aishatulhusna/Documents/GitHub/ChatbotMuzaffar/src/main/resources/w2v_test.txt");
-    File inFileTr = new File("C:/Users/aishatulhusna/Documents/GitHub/ChatbotMuzaffar/src/main/resources/validation.txt");
-    File outFileTr = new File("C:/Users/aishatulhusna/Documents/GitHub/ChatbotMuzaffar/src/main/resources/w2v_tr.txt");
-    File inFileVa = new File("C:/Users/aishatulhusna/Documents/GitHub/ChatbotMuzaffar/src/main/resources/test.txt");
-    File outFileVa = new File("C:/Users/aishatulhusna/Documents/GitHub/ChatbotMuzaffar/src/main/resources/w2v_val.txt");
+    File charFile = new File("C:/Users/zeke1/Documents/GitHub/ChatbotMuzaffar/src/main/resources/singleCharVec.txt");
+    File inFileTe = new File("C:/Users/zeke1/Documents/GitHub/ChatbotMuzaffar/src/main/resources/training.txt");
+    File outFileTe = new File("C:/Users/zeke1/Documents/GitHub/ChatbotMuzaffar/src/main/resources/w2v_test.txt");
+    File inFileTr = new File("C:/Users/zeke1/Documents/GitHub/ChatbotMuzaffar/src/main/resources/validation.txt");
+    File outFileTr = new File("C:/Users/zeke1/Documents/GitHub/ChatbotMuzaffar/src/main/resources/w2v_tr.txt");
+    File inFileVa = new File("C:/Users/zeke1/Documents/GitHub/ChatbotMuzaffar/src/main/resources/test.txt");
+    File outFileVa = new File("C:/Users/zeke1/Documents/GitHub/ChatbotMuzaffar/src/main/resources/w2v_val.txt");
     outputVec(charFile, inFileTr, outFileTr);
     outputVec(charFile, inFileVa, outFileVa);
     outputVec(charFile, inFileTe, outFileTe);
   }
   private static void outputCharVec() throws Exception {
     HashSet<Character> set = new HashSet<Character>();
-    File file = new File("C:/Users/aishatulhusna/Documents/GitHub/ChatbotMuzaffar/src/main/resources/validation.txt");
-    File charFile = new File("C:/Users/aishatulhusna/Documents/GitHub/ChatbotMuzaffar/src/main/resources/singleCharVec.txt");
+    File file = new File("C:/Users/zeke1/Documents/GitHub/ChatbotMuzaffar/src/main/resources/validation.txt");
+    File charFile = new File("C:/Users/zeke1/Documents/GitHub/ChatbotMuzaffar/src/main/resources/singleCharVec.txt");
     FileReader fIn = new FileReader(file);
     BufferedReader bfr = new BufferedReader(fIn);
     FileWriter cfOut = new FileWriter(charFile);

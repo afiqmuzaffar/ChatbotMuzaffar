@@ -33,7 +33,7 @@ public class OneHotNN {
   }
 
   public static void main(String[] args) throws Exception {
-    File charFile = new File("C:/Users/aishatulhusna/Documents/GitHub/ChatbotMuzaffar/src/main/resources/singleCharVec.txt");
+    File charFile = new File("C:/Users/zeke1/Documents/GitHub/ChatbotMuzaffar/src/main/resources/singleCharVec.txt");
     FileReader cfIn = new FileReader(charFile);
     BufferedReader bcfr = new BufferedReader(cfIn);
     LineNumberReader lnr = new LineNumberReader(bcfr);
@@ -47,7 +47,7 @@ public class OneHotNN {
 
   public void initialModel(int numInputs) throws Exception {
     int seed = 123;
-    File charFile = new File("C:/Users/aishatulhusna/Documents/GitHub/ChatbotMuzaffar/src/main/resources/answer.txt");
+    File charFile = new File("C:/Users/zeke1/Documents/GitHub/ChatbotMuzaffar/src/main/resources/answer.txt");
     FileReader cfIn = new FileReader(charFile);
     BufferedReader bcfr = new BufferedReader(cfIn);
     LineNumberReader lnr = new LineNumberReader(bcfr);
@@ -64,12 +64,12 @@ public class OneHotNN {
     // Load the training data:
     RecordReader rr = new CSVRecordReader();
 //        rr.initialize(new FileSplit(new File("/home/casey/projects/up/qa-bot-dl4j-nn/src/main/resources/classification/linear_data_train.csv")));
-    rr.initialize(new FileSplit(new File("C:/Users/aishatulhusna/Documents/GitHub/ChatbotMuzaffar/src/main/resources/w2v_tr.txt")));
+    rr.initialize(new FileSplit(new File("C:/Users/zeke1/Documents/GitHub/ChatbotMuzaffar/src/main/resources/w2v_tr.txt")));
     DataSetIterator trainIter = new RecordReaderDataSetIterator(rr, batchSize, 0, numOutputs);
 
     // Load the test/evaluation data:
     RecordReader rrTest = new CSVRecordReader();
-    rrTest.initialize(new FileSplit(new File("C:/Users/aishatulhusna/Documents/GitHub/ChatbotMuzaffar/src/main/resources/w2v_test.txt")));
+    rrTest.initialize(new FileSplit(new File("C:/Users/zeke1/Documents/GitHub/ChatbotMuzaffar/src/main/resources/w2v_test.txt")));
     DataSetIterator testIter = new RecordReaderDataSetIterator(rrTest, batchSize, 0, numOutputs);
 
     // build neural network

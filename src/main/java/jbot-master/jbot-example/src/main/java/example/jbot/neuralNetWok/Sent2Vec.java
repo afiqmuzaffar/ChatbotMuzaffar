@@ -12,7 +12,7 @@ public class Sent2Vec {
 
 
   public void initialCharVec() throws Exception {
-    File inFile = new File("C:/Users/aishatulhusna/Documents/GitHub/ChatbotMuzaffar/src/main/resources/singleCharVec.txt");
+    File inFile = new File("C:/Users/zeke1/Documents/GitHub/ChatbotMuzaffar/src/main/resources/singleCharVec.txt");
     FileReader fReader = new FileReader(inFile);
     BufferedReader bfr = new BufferedReader(fReader);
     String str;
@@ -25,7 +25,7 @@ public class Sent2Vec {
 
   public LinkedList<String> getAswList() throws Exception {
     LinkedList aswList = new LinkedList();
-    File inFile = new File("C:/Users/aishatulhusna/Documents/GitHub/ChatbotMuzaffar/src/main/resources/answer.txt");
+    File inFile = new File("C:/Users/zeke1/Documents/GitHub/ChatbotMuzaffar/src/main/resources/answer.txt");
     FileReader fReader = new FileReader(inFile);
     BufferedReader bfr = new BufferedReader(fReader);
     String str;
